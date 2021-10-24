@@ -1,0 +1,15 @@
+set pagination off
+set logging file gdb.output
+set logging on
+b 30
+r 1 12
+
+while (i < end)
+    if (i % 5 == 0)
+        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
+    end
+    n
+    n
+end
+
+q
