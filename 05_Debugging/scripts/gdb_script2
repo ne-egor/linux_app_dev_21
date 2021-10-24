@@ -6,28 +6,7 @@ b 30
 r -100 100 3
 
 while (i < end)
-    if ($iter == 28)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 29)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 30)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 31)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 32)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 33)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 34)
-        printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
-    end
-    if ($iter == 35)
+    if ($iter > 27) && ($iter < 36)
         printf "@@@ %ld %ld %ld %ld\n", start, end, step, i
     end
     set $iter++
