@@ -4,7 +4,7 @@
 AC_PREREQ([2.71])
 AC_INIT([rhasher], [1.0], [nowhere@mail.ru])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
-AC_CONFIG_SRCDIR([src/hasher.c])
+AC_CONFIG_SRCDIR([src/rhasher.c])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
