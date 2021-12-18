@@ -5,10 +5,15 @@ bin_PROGRAMS=rhasher
 
 rhasher_SOURCES=src/rhasher.c
 
+TESTS = sha1_test1.sh sha1_test2.sh md5_test1.sh md5_test2.sh
+
+gitclean: 
+	git clean -fd
+
 myclean:
 	rm -r autom4te.cache 
 	rm -r src/.deps
-	find . | grep -v "configure.ac\|Makefile.am\|src/rhasher.c" | xargs rm
+	find . | grep -v "configure.ac\|Makefile.am\|src/rhasher.c\|sha1_test1.sh\|sha1_test2.sh\|md5_test1.sh\|md5_test2.sh" | xargs rm
 
 mytest: rhasher
 	./rhasher <<< 'SHA1 "1' > tmp.txt
