@@ -1,0 +1,58 @@
+# Russian translations for simple guesser package
+# Английские переводы для пакета simple guesser.
+# Copyright (C) 2021 THE simple guesser'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the simple guesser package.
+# egor <egor@egor-system>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: simple guesser 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 17:26+0300\n"
+"PO-Revision-Date: 2021-12-18 18:13+0300\n"
+"Last-Translator: egor <egor@egor-system>\n"
+"Language-Team: Russian <gnu@d07.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: guesser.c:45
+#, c-format
+msgid "I will try to guess a number from 1 to 100\n"
+msgstr "Я попытаюсь угадать число от 1 до 100\n"
+
+#: guesser.c:42
+#, c-format
+msgid "I will try to guess a number from I to C\n"
+msgstr "Я попытаюсь угадать число от I до C\n"
+
+#: guesser.c:21
+#, c-format
+msgid "Is your number less then %d?\n"
+msgstr "Ваше число меньше %d?\n"
+
+#: guesser.c:19
+#, c-format
+msgid "Is your number less then %s?\n"
+msgstr "Ваше число меньше %s?\n"
+
+#: guesser.c:46
+#, c-format
+msgid "Your number is %d\n"
+msgstr "Ваше число равно %d\n"
+
+#: guesser.c:43
+#, c-format
+msgid "Your number is %s\n"
+msgstr "Ваше число равно %s\n"
+
+#: guesser.c:26
+msgid "no"
+msgstr "нет"
+
+#, c-format
+#~ msgid "AAA"
+#~ msgstr "еее"
