@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simple guesser 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-18 18:12+0300\n"
+"POT-Creation-Date: 2021-12-18 19:37+0300\n"
 "PO-Revision-Date: 2021-12-18 18:13+0300\n"
 "Last-Translator: egor <egor@egor-system>\n"
 "Language-Team: Russian <gnu@d07.ru>\n"
@@ -19,17 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: guesser.c:14
+#: guesser.c:35
+#, c-format
+msgid "I will try to guess a number from 1 to 100\n"
+msgstr "Я попытаюсь угадать число от 1 до 100\n"
+
+#: guesser.c:13
 #, c-format
 msgid "Is your number less then %d?\n"
 msgstr "Ваше число меньше %d?\n"
 
 #: guesser.c:36
 #, c-format
-msgid "I will try to guess a number from 1 to 100\n"
-msgstr "Я попытаюсь угадать число от 1 до 100\n"
-
-#: guesser.c:37
-#, c-format
 msgid "Your number is %d\n"
 msgstr "Ваше число равно %d\n"
+
+#: guesser.c:16
+msgid "no"
+msgstr "нет"
