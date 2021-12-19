@@ -6,6 +6,12 @@ po/ru/LC_MESSAGES/guesser.mo: po/ru.po
 	mkdir -p `dirname $@`
 	msgfmt $< -o $@
 
+all-local:	gen_man
+
+gen_man: Doxyfile guesser
+	doxygen $<
+
+
 update_po: guesser.c
 	xgettext --keyword=_ --language=C --add-comments -o po/guesser.pot $<
 	msgmerge --update po/ru.po po/guesser.pot
@@ -13,6 +19,7 @@ update_po: guesser.c
 
 gitclean:
 	git clean -fd
+
 
 #messages.pot:	guesser.pot guesser.c
 #	xgettext -k_ -c guesser.c -o messages.new.pot

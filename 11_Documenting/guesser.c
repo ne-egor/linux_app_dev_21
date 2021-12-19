@@ -4,28 +4,48 @@
 #include <locale.h>
 #include <string.h>
 
+/**
+ * Macros for gettext function
+ */
 #define _(STRING) gettext(STRING)
 
-
+/** 
+ * Print to stderr Usage
+ */
 void usage(char* name) {
-	printf(_("Usage: %s [OPTION...]\n"), name);
-	printf(_("Try `%s --help' or `%s -?' for more information\n"), name, name);
+	fprintf(stderr, _("Usage: %s [OPTION...]\n"), name);
+	fprintf(stderr, _("Try `%s --help' or `%s -?' for more information\n"), name, name);
 }
 
+/**
+ * Print to stdin requested --help
+ */
 void full_usage(char* name) {
 	printf(_("Usage: %s [OPTION...]\n"), name);
 	printf(_("Guesser -- a program which guesses number from 1 to 100\n\n"));
 	printf(_("\t-r          Display numbers in Roman\n"));
 	printf(_("\t--help      Give this help list\n"));
 	printf("\t-?\n\n");
-	printf(_("Report bugs to <nowhere@gmail.com\n"));
+	printf(_("Report bugs to <nowhere@gmail.com>\n"));
 }
 
+/**
+ * Convert number in range from 0 to 100 into Roman
+ */
 char* toRoman(int i) {
 	static char * table[] = {"N", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII", "XXXIX", "XL", "XLI", "XLII", "XLIII", "XLIV", "XLV", "XLVI", "XLVII", "XLVIII", "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII", "LVIII", "LIX", "LX", "LXI", "LXII", "LXIII", "LXIV", "LXV", "LXVI", "LXVII", "LXVIII", "LXIX", "LXX", "LXXI", "LXXII", "LXXIII", "LXXIV", "LXXV", "LXXVI", "LXXVII", "LXXVIII", "LXXIX", "LXXX", "LXXXI", "LXXXII", "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX", "XC", "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"};
 	return table[i];
 }
 
+/**
+ * Recursive guess function. If params a and b are equal, return one of them. Else, divide [a, b] into 2 subregions, ask user which one is correct and continue with picked region
+ *
+ *  @param a Left boundary
+ *  @param b Right boundary
+ *  @param roman Flag to convert numbers to Roman
+ *
+ *  @returns Guessed number
+ */
 int guess(int a, int b, int roman) {
 	if (a == b) {
 		return a;
