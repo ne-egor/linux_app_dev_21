@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: simple guesser 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-19 17:26+0300\n"
+"POT-Creation-Date: 2021-12-19 20:58+0300\n"
 "PO-Revision-Date: 2021-12-18 18:13+0300\n"
 "Last-Translator: egor <egor@egor-system>\n"
 "Language-Team: Russian <gnu@d07.ru>\n"
@@ -19,39 +19,95 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: guesser.c:45
+#: guesser.c:11 guesser.c:16
 #, c-format
-msgid "I will try to guess a number from 1 to 100\n"
-msgstr "Я попытаюсь угадать число от 1 до 100\n"
+msgid "Usage: %s [OPTION...]\n"
+msgstr "Использование: %s [Опция...]\n"
 
-#: guesser.c:42
+#: guesser.c:12
 #, c-format
-msgid "I will try to guess a number from I to C\n"
-msgstr "Я попытаюсь угадать число от I до C\n"
+msgid "Try `%s --help' or `%s -?' for more information\n"
+msgstr "Попробуйте `%s --help' or `%s -?' для более подробной информации\n"
+
+#: guesser.c:17
+#, c-format
+msgid ""
+"Guesser -- a program which guesses number from 1 to 100\n"
+"\n"
+msgstr ""
+"Guesser -- программа, которая угадывает число от 1 до 100\n"
+"\n"
+
+#: guesser.c:18
+#, c-format
+msgid "\t-r          Display numbers in Roman\n"
+msgstr "\t-r          Показывать числа в римской системе счисления\n"
+
+#: guesser.c:19
+#, c-format
+msgid "\t--help      Give this help list\n"
+msgstr "\t--help      Показать все опции\n"
 
 #: guesser.c:21
 #, c-format
-msgid "Is your number less then %d?\n"
-msgstr "Ваше число меньше %d?\n"
+msgid "Report bugs to <nowhere@gmail.com\n"
+msgstr "Отправляйте баги на <nowhere@gmail.com\n"
 
-#: guesser.c:19
+#: guesser.c:35
 #, c-format
 msgid "Is your number less then %s?\n"
 msgstr "Ваше число меньше %s?\n"
 
-#: guesser.c:46
+#: guesser.c:37
 #, c-format
-msgid "Your number is %d\n"
-msgstr "Ваше число равно %d\n"
+msgid "Is your number less then %d?\n"
+msgstr "Ваше число меньше %d?\n"
 
-#: guesser.c:43
+#: guesser.c:42
+msgid "no"
+msgstr "нет"
+
+#: guesser.c:73
+#, c-format
+msgid "I will try to guess a number from I to C\n"
+msgstr "Я попытаюсь угадать число от I до C\n"
+
+#: guesser.c:74
 #, c-format
 msgid "Your number is %s\n"
 msgstr "Ваше число равно %s\n"
 
-#: guesser.c:26
-msgid "no"
-msgstr "нет"
+#: guesser.c:76
+#, c-format
+msgid "I will try to guess a number from 1 to 100\n"
+msgstr "Я попытаюсь угадать число от 1 до 100\n"
+
+#: guesser.c:77
+#, c-format
+msgid "Your number is %d\n"
+msgstr "Ваше число равно %d\n"
+
+#, c-format
+#~ msgid ""
+#~ "Usage: %s [OPTION...]\n"
+#~ "Guesser -- a program which guesses number from 1 to 100\n"
+#~ "\n"
+#~ "\t-r          Display numbers in Roman\n"
+#~ "\t--help      Give this help list\n"
+#~ "\t-?\n"
+#~ "\n"
+#~ "Report bugs to <nowhere@gmail.com\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Использование: %s [Опция...]\n"
+#~ "Guesser -- программа, которая угадывает число от 1 до 100\n"
+#~ "\n"
+#~ "\t-r          Показывать числа в римской системе счисления\n"
+#~ "\t--help      Показать все опции\n"
+#~ "\t-?\n"
+#~ "\n"
+#~ "Отправляйте баги на <nowhere@gmail.com\n"
+#~ "\n"
 
 #, c-format
 #~ msgid "AAA"

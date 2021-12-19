@@ -7,7 +7,7 @@ po/ru/LC_MESSAGES/guesser.mo: po/ru.po
 	msgfmt $< -o $@
 
 update_po: guesser.c
-	xgettext --keyword=_ --language=C --add-comments --sort-output -o po/guesser.pot $<
+	xgettext --keyword=_ --language=C --add-comments -o po/guesser.pot $<
 	msgmerge --update po/ru.po po/guesser.pot
 	echo "Update completed. Don't forget to remove fuzzy if you are satisfied and to run 'make po/ru/LC_MESSAGES/guesser.mo'"
 
